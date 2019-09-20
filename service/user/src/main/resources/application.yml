@@ -1,0 +1,13 @@
+server:
+  port: 12316
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: user
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:12311/eureka

@@ -1,0 +1,19 @@
+package z.cloud.sso;
+
+import org.mybatis.spring.annotation.MapperScan;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import springfox.documentation.swagger2.annotations.EnableSwagger2;
+
+@EnableSwagger2
+@SpringBootApplication(scanBasePackages = "z.cloud")
+@MapperScan("z.cloud.mapper")
+@EnableDiscoveryClient
+public class SsoApplication {
+
+    public static void main(String[] args) {
+        SpringApplication.run(SsoApplication.class, args);
+    }
+
+}

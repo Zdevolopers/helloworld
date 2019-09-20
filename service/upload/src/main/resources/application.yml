@@ -1,0 +1,20 @@
+server:
+  port: 12315
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: upload
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql:///helloworld?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:12311/eureka
+fdfs:
+  addr: http://192.168.3.147:80/

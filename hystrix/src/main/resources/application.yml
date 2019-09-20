@@ -1,0 +1,13 @@
+server:
+  port: 12312
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: hystrix
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:12311/eureka
+    fetch-registry: false
+    register-with-eureka: true
